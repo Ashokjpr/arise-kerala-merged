@@ -11,7 +11,8 @@ export default function StatsSection() {
   return (
     <section className="py-16" style={{
       backgroundImage: "url('/images/rajesthan-bg.jpg')",
-      backgroundSize: "contain",
+      backgroundSize: "contain ",
+      height: "400px",
     }}>
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
         {stats.map((item, index) => (
