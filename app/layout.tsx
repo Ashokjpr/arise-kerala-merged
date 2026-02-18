@@ -19,8 +19,55 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Your Website Title",
-  description: "Your website description",
+  title: {
+    default: "Best FMGE Coaching Centre in Jaipur, India | Arise Medical Academy",
+    template: "Are You Afraid of How to Deal With FMGE? Join Arise Medical Academy Soon and Get Ready With The Best FMGE Coaching Centre in Kerala, India.",
+  },
+
+  description: "Arise Medical Academy Jaipur",
+
+  keywords: [
+    "blog",
+    "best medical academy in jaipur",
+    "Arise Medical Academy Jaipur",
+  ],
+
+  alternates: {
+    canonical: "/blog",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+
+  openGraph: {
+    type: "website",
+    siteName: "Arise Medical Academy Jaipur",
+    url: "/",
+    images: [
+      {
+        url: "/images/blog-image.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Arise Medical Academy Jaipur Blog",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    images: ["/images/blog-image.jpeg"],
+  },
+
+  metadataBase: new URL("http://localhost:3000/"),
 };
 
 export default function RootLayout({
