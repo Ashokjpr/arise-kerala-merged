@@ -19,8 +19,135 @@
   }
 }
 
+
+@font-face {
+  font-family: 'Averta';
+  src: url('/fonts/Averta.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'LibreBodoni';
+  src: url('/fonts/LibreBodoni-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'HelveticaNeueLTPro';
+  src: url('/public/fonts/Helvetica\ Neue\ LT\ Pro\ 97\ Black\ Condensed.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url('/public/fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Open-Sans';
+  src: url('/public/fonts/OpenSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
+
+/* contact us */
+
+.contact-banner {
+  width: 100%;
+  max-height: 300px;
+}
+.LibreBodoniNormal{
+  font-family: 'LibreBodoni' !important;
+  font-weight: 400;
+}
+.RobotoRegular{
+  font-family: 'RobotoRegular' !important;
+  font-weight: 400;
+}
+.HelveticaNeueLTPro{
+  font-family: 'HelveticaNeueLTPro' !important;
+  font-weight: 400;
+}
+.OpenSans{
+  font-family: 'Open-Sans' !important;
+  font-weight: 400;
+}
+.contact-banner .overlay {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'LibreBodoni' !important;
+}
+p, span, div{
+  font-family: 'Averta' !important;
+}
+
+.contact-banner img {
+  object-fit: cover;
+  color: transparent;
+  max-height: 300px;
+}
+
+.contact-banner .overlay h1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+}
+
+
+/* Floating animations */
+@keyframes float1 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10px, -20px);
+  }
+}
+
+@keyframes float2 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-10px, 20px);
+  }
+}
+
+.animate-float1 {
+  animation: float1 6s ease-in-out infinite;
+}
+
+.animate-float2 {
+  animation: float2 7s ease-in-out infinite;
+}
+
+/* ✅ HOVER TEXT */
+.hover-text {
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hover-text:hover {
+   transform: translateY(-5px) scale(1.05);
+  color: #990606c7; /* yellow */
+}
+
