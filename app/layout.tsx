@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import AOSProvider from "@/components/shared/AOSProvider";
@@ -19,59 +18,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
-
-
 export const metadata: Metadata = {
-  title: {
-    default: "Best FMGE Coaching Centre in Jaipur, India | Arise Medical Academy",
-    template: "Are You Afraid of How to Deal With FMGE? Join Arise Medical Academy Soon and Get Ready With The Best FMGE Coaching Centre in Kerala, India.",
-  },
-
-  description: "Arise Medical Academy Jaipur",
-
-  keywords: [
-    "blog",
-    "best medical academy in jaipur",
-    "Arise Medical Academy Jaipur",
-  ],
-
-  alternates: {
-    canonical: "/blog",
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-      "max-video-preview": -1,
-    },
-  },
-
-  openGraph: {
-    type: "website",
-    siteName: "Arise Medical Academy Jaipur",
-    url: "/",
-    images: [
-      {
-        url: "/images/blog-image.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "Arise Medical Academy Jaipur Blog",
-      },
-    ],
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    images: ["/images/blog-image.jpeg"],
-  },
-
-  metadataBase: new URL("http://localhost:3000/"),
+  title: "Your Website Title",
+  description: "Your website description",
 };
 
 export default function RootLayout({
@@ -81,15 +30,48 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <AOSProvider>
+
+          {/* FULL WIDTH TOP */}
           <TopSlider />
           <Navbar />
-          {children}
+
+          {/* CONTENT AREA */}
+          <div className="relative flex flex-col min-h-screen">
+
+            {/* LEFT BORDER */}
+            <div
+              className="
+                absolute left-0 top-0 h-full
+                w-[8px] sm:w-[12px] lg:w-[20px]
+                bg-[url('/images/side-border.png')]
+                bg-repeat-y bg-contain z-30
+              "
+            ></div>
+
+            {/* RIGHT BORDER */}
+            <div
+              className="
+                absolute right-0 top-0 h-full 
+                w-[8px] sm:w-[12px] lg:w-[20px]
+                bg-[url('/images/side-border.png')]
+                bg-repeat-y bg-contain z-30
+                rotate-180 
+              "
+            ></div>
+
+            {/* MAIN CONTENT WITH PADDING */}
+            <main className="flex-1 ">
+              {children}
+            </main>
+
+          </div>
+
+          {/* FULL WIDTH FOOTER */}
           <ScrollToTop />
           <Footer />
+
         </AOSProvider>
       </body>
     </html>

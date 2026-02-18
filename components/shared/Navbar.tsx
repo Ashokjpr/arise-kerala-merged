@@ -3,9 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { usePathname } from "next/navigation";
-import { ChevronDown } from "lucide-react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -14,39 +13,24 @@ export default function Navbar() {
 
   const pathname = usePathname();
 
-  const navItems = ["Home", "Courses", "Contact Us", "Registration Fees", "Blog", "Gallery"];
+  const navItems = [
+    "Home",
+    "Courses",
+    "Contact Us",
+    "Registration Fees",
+    "Blog",
+    "Gallery",
+  ];
 
- const courseItems = [
-  {
-    label: "FMGE Rapid Revision",
-    href: "/fmge-rapid-revision",
-  },
-  {
-    label: "FMGE Regular Course",
-    href: "/fmge-regular-course",
-  },
-  {
-    label: "FMGE Regular Online Course",
-    href: "/fmge-regular-online-course",
-  },
-  {
-    label: "FMGE Semi Regular Course",
-    href: "/fmge-semi-regular-course",
-  },
-  {
-    label: "FMGE Semi Regular Online Course",
-    href: "/fmge-semi-regular-online-course",
-  },
-  {
-    label: "FMGE Test Discussion Course",
-    href: "/fmge-test-discussion-course",
-  },
-  {
-    label: "FMGE Vacational Course",
-    href: "/fmge-vacational-course",
-  },
-];
-
+  const courseItems = [
+    { label: "FMGE Rapid Revision", href: "/fmge-rapid-revision" },
+    { label: "FMGE Regular Course", href: "/fmge-regular-course" },
+    { label: "FMGE Regular Online Course", href: "/fmge-regular-online-course" },
+    { label: "FMGE Semi Regular Course", href: "/fmge-semi-regular-course" },
+    { label: "FMGE Semi Regular Online Course", href: "/fmge-semi-regular-online-course" },
+    { label: "FMGE Test Discussion Course", href: "/fmge-test-discussion-course" },
+    { label: "FMGE Vacational Course", href: "/fmge-vacational-course" },
+  ];
 
   const getHref = (item: string) =>
     item === "Home" ? "/" : `/${item.toLowerCase().replace(/\s+/g, "-")}`;
@@ -54,23 +38,25 @@ export default function Navbar() {
   const isActive = (href: string) => pathname === href;
 
   useEffect(() => {
-    if (open) {
-      // disable background scroll
-      document.body.style.overflow = "hidden";
-    } else {
-      // re-enable scroll
-      document.body.style.overflow = "";
-    }
-
-    // cleanup (important)
+    document.body.style.overflow = open ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-50 text-black bg-white/90 backdrop-blur shadow-sm ">
-      <nav className="max-w-7xl mx-auto px-4">
+    <header className="sticky top-0 z-50 shadow-sm bg-white/90 backdrop-blur relative ">
+
+      {/* Jaipur Skyline Background */}
+      <div
+        className="absolute inset-0 bg-repeat-x bg-bottom opacity-40 pointer-events-none"
+        style={{
+          backgroundImage: "url('/images/rajesthan-bg2.png')",
+          backgroundSize: "auto 30px",
+        }}
+      />
+
+      <nav className="relative max-w-7xl mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
 
           {/* Logo */}
@@ -90,20 +76,19 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-8 font-medium">
+          <div className="hidden md:flex items-center gap-8 font-medium text-black">
             {navItems.map((item) => {
               if (item === "Courses") {
                 return (
                   <div key={item} className="relative group">
-                    <span className="cursor-pointer flex items-center gap-1 transition group-hover:text-blue-700">
+                    <span className="cursor-pointer flex items-center gap-1 transition hover:text-blue-700">
                       Courses
                       <ChevronDown
-                          size={14}
-                          className="transition-transform duration-200 group-hover:rotate-180"
-                        />
+                        size={14}
+                        className="transition-transform duration-200 group-hover:rotate-180"
+                      />
                     </span>
 
-                    {/* Hover Dropdown */}
                     <div
                       className="absolute left-0 top-full mt-2 w-72 rounded-lg bg-white shadow-lg
                       opacity-0 invisible translate-y-2
@@ -131,22 +116,24 @@ export default function Navbar() {
                 <Link
                   key={item}
                   href={href}
-                  className={`relative group transition ${active ? "text-blue-700 font-semibold" : ""
-                    }`}
+                  className={`relative transition ${
+                    active ? "text-blue-700 font-semibold" : ""
+                  }`}
                 >
                   <span>{item}</span>
                   <span
-                    className={`absolute left-0 -bottom-1 h-0.5 transition-all ${active
+                    className={`absolute left-0 -bottom-1 h-0.5 transition-all ${
+                      active
                         ? "w-full bg-blue-700"
-                        : "w-0 bg-blue-700 group-hover:w-full"
-                      }`}
+                        : "w-0 bg-blue-700 hover:w-full"
+                    }`}
                   />
                 </Link>
               );
             })}
           </div>
 
-          {/* Right */}
+          {/* Right Section */}
           <div className="flex items-center gap-2">
             <Link
               href="/register"
@@ -159,7 +146,7 @@ export default function Navbar() {
             <button
               aria-label="Open menu"
               onClick={() => setOpen(true)}
-              className="md:hidden rounded-lg p-2 hover:bg-gray-100 transition focus:outline-none focus:ring-2 focus:ring-blue-600"
+              className="md:hidden rounded-lg p-2 hover:bg-gray-100 transition"
             >
               <Menu />
             </button>
@@ -169,8 +156,9 @@ export default function Navbar() {
 
       {/* Mobile Overlay */}
       <div
-        className={`fixed inset-0 z-40 bg-black/40 transition-opacity md:hidden ${open ? "opacity-100 visible" : "opacity-0 invisible"
-          }`}
+        className={`fixed inset-0 z-40 bg-black/40 transition-opacity md:hidden ${
+          open ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
         onClick={() => {
           setOpen(false);
           setMobileCoursesOpen(false);
@@ -179,8 +167,9 @@ export default function Navbar() {
 
       {/* Mobile Slide Menu */}
       <aside
-        className={`fixed top-0 right-0 z-50 h-full w-72 bg-white shadow-xl transform transition-transform duration-300 md:hidden ${open ? "translate-x-0" : "translate-x-full hidden"
-          }`}
+        className={`fixed top-0 right-0 z-50 h-full w-72 bg-white shadow-xl transform transition-transform duration-300 md:hidden ${
+          open ? "translate-x-0" : "translate-x-full hidden"
+        }`}
       >
         <div className="flex items-center justify-between px-4 h-16 border-b">
           {!logoError ? (
@@ -207,7 +196,7 @@ export default function Navbar() {
           </button>
         </div>
 
-        <div className="flex flex-col gap-2 p-4 font-medium bg-white/90  backdrop-blur-lg h-screen overflow-y-auto">
+        <div className="bg-white/90 flex flex-col gap-2 p-4 font-medium h-screen overflow-y-auto">
           {navItems.map((item) => {
             if (item === "Courses") {
               return (
@@ -216,13 +205,15 @@ export default function Navbar() {
                     onClick={() =>
                       setMobileCoursesOpen(!mobileCoursesOpen)
                     }
-                    className="w-full flex items-center justify-between px-3 py-2 font-semibold text-gray-700 hover:bg-blue-50 rounded-lg transition "
+                    className="w-full flex items-center justify-between px-3 py-2 font-semibold text-gray-700 hover:bg-blue-50 rounded-lg transition"
                   >
                     Courses
-                      <ChevronDown
-                        size={14}
-                        className={'transition-transform duration-200 ' + (mobileCoursesOpen ? 'rotate-180' : '')}
-                      />
+                    <ChevronDown
+                      size={14}
+                      className={`transition-transform duration-200 ${
+                        mobileCoursesOpen ? "rotate-180" : ""
+                      }`}
+                    />
                   </button>
 
                   {mobileCoursesOpen && (
@@ -257,10 +248,11 @@ export default function Navbar() {
                   setOpen(false);
                   setMobileCoursesOpen(false);
                 }}
-                className={`px-3 py-2 rounded-lg transition ${active
+                className={`px-3 py-2 rounded-lg transition ${
+                  active
                     ? "bg-blue-50 text-blue-700 font-semibold"
                     : "hover:bg-blue-50 hover:text-blue-600"
-                  }`}
+                }`}
               >
                 {item}
               </Link>

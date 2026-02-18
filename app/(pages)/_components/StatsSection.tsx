@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function StatsSection() {
   const stats = [
-    { number: "40,000+", label: "Trained Medicos", bgImg: "/images/Statscard-bg1.avif" },
-    { number: "15+", label: "Years Experience", bgImg: "/images/Statscard-bg2.avif" },
-    { number: "50+", label: "Building Generational wealth for physicians since 1956", bgImg: "/images/Statscard-bg3.jpg" },
-    { number: "7+", label: "Courses", bgImg: "/images/Statscard-bg4.jpg" },
+    { number: "40,000+", label: "Trained Medicos", bgImg: "/images/classroom1.jpg" },
+    { number: "15+", label: "Years Experience", bgImg: "/images/classroom1.jpg" },
+    { number: "50+", label: "Building Generational wealth for physicians since 1956", bgImg: "/images/classroom1.jpg" },
+    { number: "7+", label: "Courses", bgImg: "/images/classroom1.jpg" },
   ];
 
   return (

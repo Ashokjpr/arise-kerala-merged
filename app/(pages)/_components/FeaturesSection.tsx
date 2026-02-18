@@ -34,13 +34,13 @@ const features = [
           </p>
         ))}
       </div>
-      <div style={{
+      {/* <div style={{
           backgroundImage: "url('/rajesthan-icon/camel-group-2.png')",
           backgroundSize: "contain",
           height: "60px",
         }}>
        
-      </div>
+      </div> */}
     </section>
   );
 }

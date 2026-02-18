@@ -5,10 +5,10 @@ export default function Hero() {
   return (
     <section
       className="relative pt-20  bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/images/hero-bg4.png')" }}
+      style={{ backgroundImage: "url('/images/hero-bg.webp')" }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-blue-900/70"></div>
 
       {/* Content */}
       <div className="relative max-w-4xl mx-auto px-6 text-center text-white">

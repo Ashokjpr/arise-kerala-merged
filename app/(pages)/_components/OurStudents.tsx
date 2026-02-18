@@ -102,17 +102,17 @@ const OurStudents = () => {
   };
 
   return (
-    <section id="testimonial" className=" ">
+    <section id="testimonial" className="max-w-full">
       <Image
-        src="/images/rj-bg.png"
+        src="/images/rajesthan-bg2.png"
         alt="Background Image"
         width={1200}
         height={400}
-        className="absolute  w-full h-[482px] object-cover opacity-100"
+        className="absolute  w-screen h-[482px] object-cover opacity-100"
       />
        
-      <div className="relative bg-black/40 z-10 container mx-auto max-w-full pt-10 md:px-10 ">
-        <h2 className="text-2xl md:text-5xl text-white font-semibold text-center mb-16 text-hover">
+      <div className="container relative bg-white/70 z-10 container mx-auto max-w-7xl pt-10 md:px-10 ">
+        <h2 className="text-2xl md:text-5xl text-blue-900 font-semibold text-center mb-10 text-hover">
           Hear From Our Students​
           <hr/>
         </h2>
