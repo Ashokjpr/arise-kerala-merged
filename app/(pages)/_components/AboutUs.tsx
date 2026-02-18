@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function AboutUs() {
   return (
-    <section id="about-us" className="pt-12 bg-gray-100 w-full">
+    <section id="about-us" className="py-10 bg-gray-100 w-full">
       <div className="container text-center mx-auto px-4 lg:max-w-screen-xl md:max-w-screen-md">
         
           <h2
@@ -30,7 +30,7 @@ function AboutUs() {
           </p>
 
           {/* Button */}
-          <div className="my-8 flex justify-center ">
+          <div className="mt-8 flex justify-center ">
             <Link
               href="/register"
               className="text-white bg-green-500 px-8 py-3 rounded-lg text-lg font-medium hover:bg-green-900 transition duration-300"
@@ -41,9 +41,7 @@ function AboutUs() {
 
       </div>
 
-      {/* Decorative Bottom Border */}
-      <div className="absolute  left-0 w-full h-1 bg-gradient-to-r from-yellow-600 via-orange-500 to-red-800"></div>
-    </section>
+     </section>
   );
 }
 

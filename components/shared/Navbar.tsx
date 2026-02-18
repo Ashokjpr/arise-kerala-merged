@@ -52,11 +52,11 @@ export default function Navbar() {
         className="absolute inset-0 bg-repeat-x bg-bottom opacity-40 pointer-events-none"
         style={{
           backgroundImage: "url('/images/rajesthan-bg2.png')",
-          backgroundSize: "auto 30px",
+          backgroundSize: "auto 60px",
         }}
       />
 
-      <nav className="relative max-w-7xl mx-auto px-4">
+      <nav className="relative bg-white/20 max-w-7xl mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
 
           {/* Logo */}
@@ -137,7 +137,7 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             <Link
               href="/register"
-              className="hidden md:block px-4 py-2 bg-emerald-700 text-white rounded hover:bg-emerald-900 transition"
+              className="hidden md:block px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800 transition"
             >
               Register
             </Link>
@@ -265,7 +265,7 @@ export default function Navbar() {
               setOpen(false);
               setMobileCoursesOpen(false);
             }}
-            className="mt-4 px-4 py-2 bg-emerald-600 text-white rounded-full text-center hover:bg-emerald-700 transition"
+            className="mt-4 px-4 py-2 bg-blue-700 text-white rounded-full text-center hover:bg-blue-800 transition"
           >
             Register
           </Link>

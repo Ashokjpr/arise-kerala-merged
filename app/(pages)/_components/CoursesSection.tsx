@@ -11,10 +11,12 @@ export default function CoursesSection() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
-        {[1, 2, 3, 4, 5, 6].map((item) => (
+        {[1, 2, 3, 4, 5, 6].map((item,index) => (
           <div
             key={item}
             className="bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay={index * 100}
           >
             <div className="h-56 bg-gray-300 flex items-center justify-center">
               <Image

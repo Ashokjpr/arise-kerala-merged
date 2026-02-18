@@ -111,7 +111,7 @@ const OurStudents = () => {
         className="absolute  w-screen h-[482px] object-cover opacity-100"
       />
        
-      <div className="container relative bg-white/70 z-10 container mx-auto max-w-7xl pt-10 md:px-10 ">
+      <div className=" relative bg-white/70 z-10 container mx-auto max-w-7xl pt-10 md:px-10 ">
         <h2 className="text-2xl md:text-5xl text-blue-900 font-semibold text-center mb-10 text-hover">
           Hear From Our Students​
           <hr/>
@@ -120,7 +120,10 @@ const OurStudents = () => {
 
         <Slider {...settings}>
           {testimonialData.map((item, i) => (
-            <div key={i} className="px-3 ">
+            <div key={i} className="px-3 " 
+             data-aos="fade-up"
+            data-aos-delay={i * 100}
+            >
               <div className="bg-white md:h-[250px]  rounded-2xl shadow-xl p-6 relative my-10">
                 
                 {/* Avatar */}

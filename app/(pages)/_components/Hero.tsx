@@ -12,20 +12,20 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative max-w-4xl mx-auto px-6 text-center text-white">
-        <h2 className="text-5xl font-bold mb-6">Arise Medical Academy Jaipur</h2>
-        <p className="text-xl mb-8">
+        <h2 className="text-5xl font-bold mb-6" data-aos="fade-left">Arise Medical Academy Jaipur</h2>
+        <p className="text-xl mb-8"data-aos="fade-right">
           A coaching and training institute focused on medical exam preparation, especially for FMGE/MCI Screening Examination and related exams.
         </p>
 
         <div className="flex justify-center gap-6">
-          <button className="bg-black px-6 py-3 rounded-lg hover:bg-gray-900 transition">
+          <button className="bg-black px-6 py-3 rounded-lg hover:bg-gray-900 transition"data-aos="fade-left">
             View All Courses
           </button>
-          <button className="bg-white text-blue-600 px-6 py-3 rounded-lg hover:bg-gray-200 transition">
+          <button className="bg-white text-blue-600 px-6 py-3 rounded-lg hover:bg-gray-200 transition" data-aos="fade-right">
             Contact Us
           </button>
         </div>
-        <div className="mt-12">
+        <div className="mt-12" data-aos="fade-up">
             <Image
                 src="/images/banner-2.webp"
                 alt="Hero Image"

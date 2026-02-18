@@ -91,8 +91,8 @@ export default function RootLayout({
             <div
               className="
                 absolute left-0 top-0 h-full
-                w-[8px] sm:w-[12px] lg:w-[20px]
-                bg-[url('/images/side-border.png')]
+                w-[8px] sm:w-[15px] lg:w-[25px]
+                bg-[url('/images/side-border2.png')]
                 bg-repeat-y bg-contain z-30
               "
             ></div>
@@ -101,8 +101,8 @@ export default function RootLayout({
             <div
               className="
                 absolute right-0 top-0 h-full 
-                w-[8px] sm:w-[12px] lg:w-[20px]
-                bg-[url('/images/side-border.png')]
+                w-[8px] sm:w-[15px] lg:w-[25px]
+                bg-[url('/images/side-border2.png')]
                 bg-repeat-y bg-contain z-30
                 rotate-180 
               "
