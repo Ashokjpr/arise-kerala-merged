@@ -24,10 +24,11 @@ function Footer() {
 
       {/* Jaipur Skyline Background */}
       <div
-        className="absolute inset-0 bg-repeat-x bg-bottom opacity-10 pointer-events-none"
+        className="absolute inset-0 bg-repeat-x bg-bottom opacity-15 pointer-events-none
+        bg-cover md:bg-repeat-x md:bg-auto"
         style={{
           backgroundImage: "url('/images/rajesthan-bg2.png')",
-          backgroundSize: "auto",
+          // backgroundSize: "auto",
         }}
       />
 
@@ -129,13 +130,17 @@ function Footer() {
               </span>
             </Link>
 
-            <div className="flex items-start gap-2 mt-3">
-              <Icon icon="tabler:brand-google-maps" className="text-3xl mt-1" />
-              <span className="text-black/80 text-sm leading-relaxed max-w-sm">
+            <Link
+              href="https://maps.app.goo.gl/L8STX88Bf25zAabX6"
+              target="_blank"
+              className="flex items-center gap-0.5 mt-3 hover:text-green-700 transition"
+            >
+              <Icon icon="tabler:brand-google-maps" className="text-6xl md:text-3xl mt-1" />
+              <span className="text-black/80 text-sm text-start ed max-w-sm">
                 Plot no -26, Tonk Rd, near Pushp Enclave, Krishna Vihar,
                 Sector 5, Pratap Nagar, Jaipur, Rajasthan 302033
               </span>
-            </div>
+            </Link>
           </div>
 
         </div>
@@ -144,7 +149,7 @@ function Footer() {
       {/* Bottom Section */}
       <div className="relative mt-10 flex flex-col lg:flex-row items-center justify-around gap-4 text-center text-sm bg-[#2540ae] text-white py-2">
         <p>
-          ©2025 All Rights Reserved by{" "}
+          ©2026 All Rights Reserved by{" "}
           <Link href="/">arisemedicalacademyjaipur.com</Link>
         </p>
 
