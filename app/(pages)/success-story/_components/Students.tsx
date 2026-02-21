@@ -77,6 +77,9 @@ export default function Students() {
                 key={index}
                 onClick={() => openModal(index)}
                 className="relative aspect-square overflow-hidden rounded-xl group cursor-pointer shadow-md hover:shadow-xl transition"
+                data-aos={index % 2==0 ?"fade-left" : "fade-right"}
+                data-aos-delay={index * 150}
+                 data-aos-duration="500"
               >
                 <Image
                   src={student.image}
