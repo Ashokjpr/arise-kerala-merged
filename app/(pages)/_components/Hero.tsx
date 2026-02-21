@@ -1,6 +1,8 @@
 'use client';
 import Image from "next/image";
 
+import HomeSlider from "./HomeSlider"
+
 export default function Hero() {
   return (
     <section
@@ -25,7 +27,9 @@ export default function Hero() {
             Contact Us
           </button>
         </div>
-        <div className="mt-12" data-aos="fade-up">
+       
+      </div>
+       {/* <div className="mt-12" data-aos="fade-up">
             <Image
                 src="/images/banner-2.webp"
                 alt="Hero Image"
@@ -33,8 +37,10 @@ export default function Hero() {
                 height={600}
                 className="mx-auto  md:h-auto min-w-[90%]"
             />
-        </div>
-      </div>
+        </div> */}
+
+        
+      <HomeSlider />
        
     </section>
   );

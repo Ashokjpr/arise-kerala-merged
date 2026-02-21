@@ -40,6 +40,42 @@ export default function FacultyPage() {
       qualification: "MBBS, MS",
       image: "/images/DrKhaleel.png",
     },
+    {
+      name: "Dr. Rajesh Sharma",
+      subject: "Anatomy",
+      qualification: "MBBS, MD",
+      image: "/images/DrKhaleel.png",
+    },
+    {
+      name: "Dr. Priya Mehta",
+      subject: "Physiology",
+      qualification: "MBBS, MD",
+      image: "/images/DrKhaleel.png",
+    },
+    {
+      name: "Dr. Amit Verma",
+      subject: "Pathology",
+      qualification: "MBBS, MD",
+      image: "/images/DrKhaleel.png",
+    },
+    {
+      name: "Dr. Sneha Iyer",
+      subject: "Pharmacology",
+      qualification: "MBBS, MD",
+      image: "/images/DrKhaleel.png",
+    },
+    {
+      name: "Dr. Arjun Rao",
+      subject: "Medicine",
+      qualification: "MBBS, MD",
+      image: "/images/DrKhaleel.png",
+    },
+    {
+      name: "Dr. Kavita Nair",
+      subject: "Surgery",
+      qualification: "MBBS, MS",
+      image: "/images/DrKhaleel.png",
+    },
   ];
 
   return (
