@@ -56,7 +56,7 @@ export default function AboutSection() {
              </p>
             <button className="mt-4 bg-blue-900 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300"
             data-aos="fade-left"
-            data-aos-delay="300"
+            data-aos-delay="250"
            >
               Read More
             </button>
