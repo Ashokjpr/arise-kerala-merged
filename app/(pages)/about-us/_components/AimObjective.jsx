@@ -19,6 +19,7 @@ export default function AimObjective() {
           OUR AIM AND OBJECTIVE
         </h2>
 
+
         <div className="w-24 h-1 bg-red-600 mx-auto mb-12 rounded-full"></div>
 
         {/* Objectives Grid */}

@@ -5,7 +5,6 @@ import Students from "./_components/Students"
 import TestimonialSection from "./_components/TestimonialSection"
 import CTASection from "./_components/CTASection"
  
-
 function page() {
   return (
     <div>

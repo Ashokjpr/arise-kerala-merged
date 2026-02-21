@@ -122,6 +122,7 @@ export default function Students() {
             <FaChevronLeft />
           </button>
 
+
           {/* Image Container */}
           <div className="relative w-[90%] max-w-4xl h-[70vh] z-40">
             <Image

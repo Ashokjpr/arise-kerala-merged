@@ -16,9 +16,8 @@ export default function FacultyCard({ name, subject, image }) {
     clipPath: "polygon(-2% 0%, 101% 0%, 89% 94%, 13% 94%)"
   }}
 ></div>
-        <div className="absolute  w-30 h-40 left-15 ms-3 md:-ms-2 lg:-ms-4 xl:ms-3 -mt-2 rounded-2xl mx-auto  border-3 border-blue-50 shadow-xl"
-       
-      > </div>
+        <div className="absolute  w-30 h-40 left-15 ms-3 md:-ms-2 lg:-ms-4 xl:ms-3 -mt-2 rounded-2xl mx-auto  border-3 border-blue-50 shadow-xl"> 
+        </div>
 
         {/* Doctor Image */}
         <div className="relative z-3 w-30 h-40 -mt-3 mx-auto rounded-2xl overflow-hidden ">

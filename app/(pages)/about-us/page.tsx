@@ -15,7 +15,6 @@ function page() {
       <MissionVision />
       <SpecialitiesServices />
       <OurBranches />
-
     </div>
   )
 }

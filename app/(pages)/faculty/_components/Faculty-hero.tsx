@@ -10,6 +10,7 @@ function hero() {
             backgroundImage: "url('/images/new-banner.jpg')",    
         }}
         />
+        
         <div className=" relative  container mx-auto px-4">
             <div className="flex flex-col items-center text-center  pt-7 md:py-16">
                 <h1 className="text-4xl md:text-5xl font-bold ">

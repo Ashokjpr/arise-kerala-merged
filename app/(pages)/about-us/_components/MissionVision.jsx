@@ -76,6 +76,7 @@ export default function MissionVision() {
               <h3 className="text-2xl font-bold text-blue-900">VISION</h3>
             </div>
 
+
             <ul className="space-y-4 text-gray-700 text-sm sm:text-base leading-relaxed">
               <li>
                 We envision Arise Medical Academy as a center of academic excellence imparting students with profound theoretical knowledge along with clinical expertise.

@@ -62,9 +62,7 @@ export default function MedicalSuccessStatus() {
                   </p>
                 </div>
               </div>
-
             </div>
-
           </div>
 
           {/* ================= RIGHT SIDE ================= */}

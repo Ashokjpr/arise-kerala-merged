@@ -14,6 +14,8 @@ function hero() {
             <div className="flex flex-col items-center text-center  pt-7 md:py-16">
                 <h1 className="text-4xl md:text-5xl font-bold ">
                     About Us
+
+                    
                 </h1>
                 <p className="font-semibold  text-lg md:text-xl  max-w-3xl">
                     {"Home>About Us"}

@@ -19,8 +19,9 @@ export default function BranchesShowcase() {
         {/* Branch Layout */}
         <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
 
+
           {/* Left Small Card */}
-          <div className=" text-white  p-6 w-full lg:w-1/4"
+          <div className=" text-white w-full lg:w-1/4  order-2 lg:order-1"
             data-aos="fade-right"
            >
             <Image
@@ -34,12 +35,12 @@ export default function BranchesShowcase() {
 
 
           {/* Center Big Card */}
-          <div className=" text-white  p-8 w-full  lg:w-2/4 relative overflow-hidden"
+          <div className=" text-white  p-8 w-full  lg:w-2/4 relative overflow-hidden  order-1 lg:order-2"
            data-aos="zoom-in">
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center w-50 h-65">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center w-50 h-35 md:h-65">
              <Image
-              src="/images/branch-jaipur.png"
+              src="/images/branch-jaipur1.png"
               alt="jaipur Branch"
               height={200}
               width={600}
@@ -52,7 +53,7 @@ export default function BranchesShowcase() {
 
 
           {/* Right Small Card */}
-          <div className=" text-white  p-6 w-full lg:w-1/4"
+          <div className=" text-white w-full lg:w-1/4  order-3"
             data-aos="fade-left"
            >
             <Image

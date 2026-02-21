@@ -61,7 +61,6 @@ export default function FacultyPage() {
             <div key={index}
             data-aos="fade-up"
             data-aos-delay={index * 150}
-           
             >
               <FacultyCard
               name={member.name}

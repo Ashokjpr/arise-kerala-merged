@@ -15,6 +15,9 @@ export default function SuccessHero() {
         className="object-cover"
       />
 
+
+
+      
       {/* Dark Gradient Overlay */}
       <div className="absolute inset-0 bg-black/20"></div>
 

@@ -71,7 +71,6 @@ export default function SpecialitiesServices() {
               ))}
             </div>
           </div>
-
         </div>
 
       </div>
