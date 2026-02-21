@@ -12,7 +12,7 @@ const testimonialData = [
     imgSrc: "/images/ANESTHESIA.jpg",
     profession: "MBBS Graduate",
     comment:
-      "Arise Kerala provided excellent guidance and structured preparation that helped me clear FMGE confidently.",
+      "Arise Jaipur provided excellent guidance and structured preparation that helped me clear FMGE confidently.",
     name: "Dr. Ananya S",
     rating: 4.5,
   },
@@ -36,7 +36,7 @@ const testimonialData = [
     imgSrc: "/images/ANESTHESIA.jpg",
     profession: "MBBS Graduate",
     comment:
-      "Arise Kerala provided excellent guidance and structured preparation that helped me clear FMGE confidently.",
+      "Arise Jaipur provided excellent guidance and structured preparation that helped me clear FMGE confidently.",
     name: "Dr. Ananya S",
     rating: 4.5,
   },

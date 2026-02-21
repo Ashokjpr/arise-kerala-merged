@@ -26,11 +26,11 @@ export default function PrivacyPolicyPage() {
             <p>
               <strong>Website:</strong>{" "}
               <Link
-                href="https://arisekerala.com"
+                href="https://arisemedicalacademyjaipur.com"
                 className="text-blue-600 hover:underline"
                 target="_blank"
               ></Link>
-              https://arisekerala.com
+              https://arisemedicalacademyjaipur.com
             </p>
             <p className="">TERMS AND CONDITIONS</p>
             <p>
@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
               Use”) of the services (as defined in Clause 2.1 below) made
               available on{" "}
               <Link
-                href="https://www.arisemedicalacademy.com"
+                href="https://www.arisemedicalacademyjaipur.com"
                 className="text-[#0170b9]"
               >
                 arisemedicalacademy.com

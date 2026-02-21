@@ -124,7 +124,7 @@ function ContactUs() {
                     </div>
                     <div>
                       <h4 className="font-semibold">Our Email:</h4>
-                      <p className="text-white/80">enquire@arisekerala.com</p>
+                      <p className="text-white/80">arisemedicalacademyrajasthan@gmail.com</p>
                     </div>
                   </li>
 
@@ -136,7 +136,7 @@ function ContactUs() {
                     </div>
                     <div>
                       <h4 className="font-semibold">Our Phone:</h4>
-                      <p className="text-white/80">+91 81369 32666</p>
+                      <p className="text-white/80">+91 9929113115</p>
                     </div>
                   </li>
                 </ul>

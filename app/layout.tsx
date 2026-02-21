@@ -22,7 +22,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: {
     default: "Best FMGE Coaching Centre in Jaipur, India | Arise Medical Academy",
-    template: "Are You Afraid of How to Deal With FMGE? Join Arise Medical Academy Soon and Get Ready With The Best FMGE Coaching Centre in Kerala, India.",
+    template: "Are You Afraid of How to Deal With FMGE? Join Arise Medical Academy Soon and Get Ready With The Best FMGE Coaching Centre in Jaipur, India.",
   },
 
   description: "Arise Medical Academy Jaipur",

@@ -12,7 +12,7 @@ function RegistrationFees() {
                     <h1 className="text-white text-4xl md:text-6xl font-bold">Registration Fees</h1>
                     <div className=" bg-white md:w-md mx-5 mt-10 py-4 md:p-8 rounded-lg shadow-xl text-center border-2 border-white ">
                         <p className="text-blue-900 font-bold text-xl">Registration Fee</p>
-                        <p className="mb-6 ">Registration charges at Arise Medical Academy Kerala are <span className="text-xl">₹15,000 INR</span>.</p>
+                        <p className="mb-6 ">Registration charges at Arise Medical Academy Jaipur are <span className="text-xl">₹15,000 INR</span>.</p>
                         <Link href="/register" className=" px-15 md:px-35 py-3  bg-blue-600 text-white rounded-md hover:bg-blue-800 transition-colors duration-300">
                             Register Now
                         </Link>

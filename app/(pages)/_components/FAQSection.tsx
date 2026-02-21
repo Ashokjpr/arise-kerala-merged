@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: "How many branches does Arise have?",
-    a: "Arise has 5 branches in Hyderabad, Delhi, Jaipur, Chennai, and Taliparamba, Kerala.",
+    a: "Arise has 5 branches in Hyderabad, Delhi, Jaipur, Chennai, and Taliparamba, Jaipur.",
   },
   {
     q: "How can I communicate with the Arise team?",
